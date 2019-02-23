@@ -244,8 +244,13 @@ class Controller(object):
         # close the controller and handle close actions
         self.close()
 
+    """Exit the program loop and program"""
+    def stop_program(self):
+        self.stop_loop()
+        self.quit = True
+
     """Method for stopping the program loop"""
-    def stop(self):
+    def stop_loop(self):
         self.done = True
         self.ticking = False
 
@@ -257,8 +262,7 @@ class Controller(object):
 
         # top right corner X
         if event.type == pygame.QUIT:
-            self.stop()
-            self.quit = True
+            self.stop_program()
 
         # player starts doing actions
         elif event.type == pygame.KEYDOWN:
