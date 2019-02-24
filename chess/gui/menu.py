@@ -18,9 +18,9 @@ class MenuController(Controller):
         self.exit_button = Button(self, 'Exit')
         # set locations
         self.play_button.loc = self.screen_grid.get_pixel(0, 0)
-        self.deck_button.loc = self.screen_grid.get_pixel(0, 5)
-        self.options_button.loc = self.screen_grid.get_pixel(0, 10)
-        self.exit_button.loc = self.screen_grid.get_pixel(0, 15)
+        self.deck_button.loc = self.screen_grid.get_pixel(0, 7)
+        self.options_button.loc = self.screen_grid.get_pixel(0, 14)
+        self.exit_button.loc = self.screen_grid.get_pixel(0, 21)
         # define actions
         self.play_button.action = self.open_lobby
         self.deck_button.action = self.open_deck

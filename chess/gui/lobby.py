@@ -34,11 +34,11 @@ class LobbyController(Controller):
 
         if self.to_game:
             from chess.gui.game import GameController
-            g = GameController(interface)
+            g = GameController(self.interface)
             g.run()
         elif self.to_menu:
             from chess.gui.menu import MenuController
-            m = MenuController(interface)
+            m = MenuController(self.interface)
             m.run()
 
     

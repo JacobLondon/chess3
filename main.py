@@ -2,7 +2,7 @@ from chess import MenuController
 from pyngine import Interface
 
 def main():
-    interface = Interface(window_text='Chess 3', resolution=(900,900))
+    interface = Interface(window_text='Chess 3', resolution=(1000,800))
     controller = MenuController(interface)
     controller.run()
 
